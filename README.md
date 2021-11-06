@@ -1,1 +1,1 @@
-# js-calculator
+# js-rockpaper
