@@ -39,6 +39,16 @@ function PlayRound (PlayerSelection, ComputerSelection) {
     }
 }
 
-const PlayerSelection = 'Rock'
+const PlayerSelection = prompt("What do you choose");
 const ComputerSelection = ComputerOutput();
-console.log(PlayRound(PlayerSelection,ComputerSelection))
+
+
+function Game() {
+    console.log(PlayRound(PlayerSelection,ComputerSelection))
+    console.log(PlayRound(PlayerSelection,ComputerSelection))
+    console.log(PlayRound(PlayerSelection,ComputerSelection))
+    console.log(PlayRound(PlayerSelection,ComputerSelection))
+    console.log(PlayRound(PlayerSelection,ComputerSelection))
+}
+
+console.log(Game())
