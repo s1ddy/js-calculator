@@ -1,6 +1,4 @@
-const PlayerSelection = 'Rock'
-const ComputerSelection = 'ComputerOutput'
-let result 
+
 
 const ComputerOutput= () => {
     const RandomNumber = (Math.floor(Math.random() * 3))
@@ -17,29 +15,30 @@ const ComputerOutput= () => {
 }
 
 
-function PlayRound (PlayerSelection,ComputerSelection) {
+function PlayRound (PlayerSelection, ComputerSelection) {
     if (PlayerSelection == ComputerSelection) {
-        result = 'Tie'    
+        return 'Tie'    
     }
     else if (PlayerSelection == 'Scissors' && ComputerSelection == 'Paper'){
-        result = 'You have won , Scissors beats Paper! :)'
+        return  'You have won , Scissors beats Paper! :)'
     }
     else if (PlayerSelection == 'Scissors' && ComputerSelection == 'Rock'){
-        result = 'You have lost, Scissors loses to Rock :('
+        return 'You have lost, Scissors loses to Rock :('
     }
     else if (PlayerSelection == 'Rock' && ComputerSelection == 'Scissors'){
-        console.log(PlayRound(PlayerSelection,ComputerSelection))
-        result = 'You have won, Rock beats Scissors!:)'
+        return  'You have won, Rock beats Scissors!:)'
     }
     else if (PlayerSelection == 'Rock' && ComputerSelection == 'Paper'){
-        result = 'You have lost, Rock loses to Paper :('
+        return 'You have lost, Rock loses to Paper :('
     }
     else if (PlayerSelection == 'Paper' && ComputerSelection == 'Rock'){
-        result = 'You have won, Paper beats Rock! :)'
+        return 'You have won, Paper beats Rock! :)'
     }
     else if (PlayerSelection == 'Paper' && ComputerSelection == 'Scissors'){
-        result = 'You have lost, Paper loses to Scissors :('
+        return 'You have lost, Paper loses to Scissors :('
     }
 }
 
+const PlayerSelection = 'Rock'
+const ComputerSelection = ComputerOutput();
 console.log(PlayRound(PlayerSelection,ComputerSelection))
