@@ -43,12 +43,4 @@ const PlayerSelection = prompt("What do you choose");
 const ComputerSelection = ComputerOutput();
 
 
-function Game() {
-    console.log(PlayRound(PlayerSelection,ComputerSelection))
-    console.log(PlayRound(PlayerSelection,ComputerSelection))
-    console.log(PlayRound(PlayerSelection,ComputerSelection))
-    console.log(PlayRound(PlayerSelection,ComputerSelection))
-    console.log(PlayRound(PlayerSelection,ComputerSelection))
-}
 
-console.log(Game())
